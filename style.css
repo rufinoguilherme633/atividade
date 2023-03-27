@@ -1,0 +1,287 @@
+*{
+	margin:0;
+	padding:0;
+	 box-sizing: border-box;
+	}
+
+header{
+	display:flex;
+	flex-direction:column;
+	display: flex;
+	
+
+	
+}
+
+.header{
+	background-color:#3347B0;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	height: 10vh;
+	
+}
+
+.headerSecondary{
+	background-color:#BCC2E5;
+		display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+	height: 5vh;
+
+}
+
+.textStatus{
+/* width: 47px;
+height: 19px; */
+font-style: normal;
+font-weight: 500;
+font-size: 1vw;
+line-height: 19px;
+color: #3347B0;
+margin-left:90px;
+
+}
+
+.optionRommSquareFinished{
+	display:flex;
+	flex-direction:row;
+	margin-right:90px;
+
+}
+
+.legend{
+	/* width: 70px; */
+/* height: 19px; */
+font-style: normal;
+/* font-weight: 500; */
+font-size: 0.9vw;
+color: #3347B0;
+margin-right:30px;
+/* background-color: #019cfe; */
+
+}
+
+.textsSquares{
+	display:flex;
+	gap:10px;
+}
+
+.colorSquareDivFinished{
+	width: 1vw;
+height: 2.1vh;
+
+}
+
+.textSquare, .textFinished{
+/* width: 5vw;
+height: 19px; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 1vw;
+color: #3347B0;
+}
+
+.finished{
+	
+background: #3347B0;
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.square{
+
+background: #E5B657;
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.containerLogotext,.containerImgSigntext{
+
+	width:max-content;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	color:#fff;
+	gap:10px;
+	
+}
+.containerLogotext{
+	margin-left:90px;
+}
+
+.containerImgSigntext{
+	margin-right:90px;
+}
+
+
+.imgLogo{
+width: 3vw;
+height:8.5vh;
+}
+
+.LionSchool{
+
+font-size: 1.5vw;
+font-weight: 700;
+line-height: 1.5vw;
+
+}
+
+.imgLogoSign{
+width: 3vw;
+height: 4vh;
+
+}
+
+.Sign {
+	font-size: 1.5vw;
+font-weight: 500;
+line-height: 42px;
+}
+
+main{
+	background-color:white;
+}
+
+.main{
+	
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	align-items:center;
+	height: 70vh;
+}
+
+.imgPersonMain{
+		width: 20vw;
+}
+
+.classRoom{
+	display:flex;
+	flex-direction:column;
+	gap:50px;
+}
+
+.titleChooseCourse{
+width: 30vw;
+/* height: 30vh; */
+font-style: normal;
+font-weight: 300;
+font-size: 4vw;
+line-height: 6vw;
+color: #353535;
+}
+
+
+.imgDispositivos {
+	width: 30vw;
+height: 40vh;
+
+}
+
+
+
+
+.room{	
+box-sizing: border-box;
+width: 100%;
+height: 30vh;
+background: #3347B0;
+border: 1px solid #000000;
+box-shadow: 12px 12px 4px rgba(51, 71, 176, 0.5);
+display:flex;
+align-items:center;
+gap:40px;
+justify-content:center;
+padding: 5vw;
+}
+
+.nameClassRoom{
+font-size: 4vw;
+font-weight: 500;
+/* line-height: 75px; */
+
+color:#ffffff;
+}
+.imgAula {
+	height: 10vh;
+	width: 6vw;
+}
+
+footer{
+	background-color:#3347B0;
+
+	justify-content: flex-end;
+}
+
+
+
+.footer{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-evenly;
+	height: 20vh;
+}
+
+.contacts{
+	display:flex;
+	flex-direction:column;
+	line-height:30px;
+	display:flex;
+	gap:5px;
+}
+
+
+
+.textContacts{
+font-size: 1vw;
+font-weight: 400;
+/* line-height: 30px; */
+letter-spacing: 0em;
+color:#FFFFFF;
+
+}
+
+.social{
+	display:flex;
+	flex-direction:row;
+	gap:30px;
+}
+
+.fab ,.fab, .fa-brands{
+	height: 1vw;
+}
+
+.social-icon {
+    height: 3.23vw;
+    width:  3.23vw;
+    /* para a borda */
+    border: 2px solid #ffffff;
+    /* para deixar um circulo */
+    border-radius: 50%;
+
+   
+    display: grid;
+    /* dizendo aoso filhos */
+
+    place-items: center;
+     /* afeta o link e todos os filhos */
+    color: #ffffff;
+    font-size: 1.5rem;
+ /* deixando a mudança de co lenta, retardando, levesa na troca de cor  */
+    transition: all .5s;
+}
+ /*  quando o mouse passa por cima ficará roxo */
+.social-icon:hover {
+   
+    background: #019cfe;
+    border: 2px solid#019cfe;
+
+}
+.imgcontact {
+	height: 2.6vh;
+	width: 1.5vw;
+}

@@ -1,0 +1,86 @@
+.none {
+	display: none;
+}
+
+
+.visivel {
+	display: flex;
+	flex-direction: column;
+width: 150px;
+height: 100px;
+background: #3347B0;
+  }
+
+.textoption {
+width: 47px;
+height: 19px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.main2{
+display:flex;
+align-items:center;
+flex-direction:column;
+gap: 60px;
+height: 65vh;
+}
+
+.alunos {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	flex-wrap: wrap;
+}
+.containerAluno{
+display:flex;
+flex-direction:column;
+width: 15vw;	
+/* height: 40vh; */
+background: #3347B0;
+box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25);
+align-items: center;
+flex: 1 0 25%;
+}
+
+.containerAluno:nth-child(4n) {
+	margin-right: 0;
+  }
+
+
+.imgAluno{
+	border-radius:50%;
+	background-color: red;
+	width: 100%;
+}
+
+.nameAluno{
+/* width: max-content; */
+/* height: 54px; */
+/* font-style: normal; */
+font-weight: 500;
+font-size: 2vw;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+background-color: red;
+}
+
+.nameClassRoom{
+/* width: 857px;
+height: 75px; */
+font-style: normal;
+font-weight: 500;
+font-size: 5vw;
+line-height: 75px;
+
+
+color: #3347B0;
+
+}
