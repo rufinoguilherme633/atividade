@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+
 	<script src="teste.js"></script>
 	<title>tela 1</title>
 </head>
@@ -19,16 +20,61 @@
 				<span class="LionSchool">Lion <br> School</span>
 			</div>
 
-			<div class="containerImgSigntext" id="sign" >
+			<div class="containerImgSigntext" id="sign">
 				<img src="img/Vector.png" alt="vector" class="imgLogoSign">
 				<span class="Sign">Sair</span>
+			</div>
+
+		</div>
+
+		<div class="headerSecondary" id="headerSecondary">
+
+			<div>
+				<span class="textStatus" id="status">Status</span>
+
+				<div id="div-opcoes" style="display:none;">
+					<ul>
+						<li>Opção 1</li>
+						<li>Opção 2</li>
+						<li>Opção 3</li>
+					</ul>
+				</div>
+			</div>
+
+			<script>
+				var divPrincipal = document.getElementById("status");
+				var divOpcoes = document.getElementById("div-opcoes");
+
+				divPrincipal.addEventListener("click", function () {
+					if (divOpcoes.style.display === "none") {
+						divOpcoes.style.display = "block";
+					} else {
+						divOpcoes.style.display = "none";
+					}
+				});
+			</script>
+
+			<div class="optionRommSquareFinished">
+				<span class="legend">LEGENDA</span>
+
+				<div class="textsSquares">
+					<div class="finished colorSquareDivFinished"></div>
+
+					<span class="textSquare">Cursando</span>
+				</div>
+
+				<div class="textsSquares">
+					<div class="square colorSquareDivFinished"></div>
+
+					<span class="textFinished">Finalizado</span>
+				</div>
 			</div>
 
 		</div>
 	</header>
 
 	<main>
-		<div class="main"  id="principal">
+		<div class="main" id="principal">
 			<div class="titleimgdispositivo">
 				<h1 class="titleChooseCourse">Escolha um curso para gerenciar</h1>
 				<img src="img/dispositivos.png" alt="" class="imgDispositivos">
@@ -49,8 +95,110 @@
 				</div>
 			</div>
 		</div>
-		<main>
 
+
+		<div class="main2" id="segundario">
+			<h1 class="nameClassRoomescolhida">Desenvolvimento de sistemas </h1>
+
+			<div class="alunos">
+
+				<div class="containerAlunos" class="containerAlunos">
+					<div class="containerAluno">
+						<img src="img/aluno.png" alt="" class="imgAluno">
+						<span class="nameAluno">Guilheme</span>
+					</div>
+				</div>
+
+				<div class="containerAlunos" class="containerAlunos">
+					<div class="containerAluno">
+						<img src="img/aluno.png" alt="" class="imgAluno">
+						<span class="nameAluno">Guilheme</span>
+					</div>
+				</div>
+
+				<div class="containerAlunos" class="containerAlunos">
+					<div class="containerAluno">
+						<img src="img/aluno.png" alt="" class="imgAluno">
+						<span class="nameAluno">Guilheme</span>
+					</div>
+				</div>
+
+				<div class="containerAlunos" class="containerAlunos">
+					<div class="containerAluno">
+						<img src="img/aluno.png" alt="" class="imgAluno">
+						<span class="nameAluno">Guilheme</span>
+					</div>
+				</div>
+
+				<div class="containerAlunos" class="containerAlunos">
+					<div class="containerAluno">
+						<img src="img/aluno.png" alt="" class="imgAluno">
+						<span class="nameAluno">Guilheme</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script>
+			const room = document.querySelectorAll('.room');
+			const main = document.getElementById('principal');
+			const main2 = document.getElementById('segundario');
+
+
+			room.forEach(function (element) {
+				console.log(element)
+				element.addEventListener('click', function () {
+					main.style.display = 'none';
+					main2.style.display = 'block';
+				});
+			});
+		</script>
+
+		<div class="main3" id="terciario">
+			<div class="alunoselecionado">
+				<img src="img/alunoescolhido.png" alt="" class="imgalunoescolhido">
+				<span class="namealunoselecionado">José Matheus da Silva Miranda</span>
+
+			</div>
+			<div class="graphic">
+
+				<div class="aulaSeparada">
+					<div class="numeroNota">90</div>
+					<div class="barraNotas">f
+						<div class="notaColor"></div>
+					</div>
+					<div class="nomeNota">sop</div>
+
+				</div>
+				<div class="aulaSeparada">
+					<div class="numeroNota">90</div>
+					<div class="barraNotas">f</div>
+					<div class="nomeNota">sop</div>
+				</div>
+				<div class="aulaSeparada">
+					<div class="numeroNota">90</div>
+					<div class="barraNotas">f</div>
+					<div class="nomeNota">sop</div>
+				</div>
+			</div>
+		</div>
+
+
+	<script>
+			const containerAlunos = document.querySelectorAll('.containerAlunos');
+			const segundario = document.getElementById('segundario');
+			const terciario = document.getElementById('terciario');
+
+			containerAlunos.forEach(function (element) {
+				console.log(element)
+				element.addEventListener('click', function () {
+					segundario.style.display = 'none';
+					terciario.style.display = 'block';
+				});
+			});
+	</script>
+
+		<main>
 
 
 

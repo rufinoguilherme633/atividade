@@ -15,7 +15,7 @@
 //   });
 // });
 
-function mostrarOpcoes() {
-    const divOpcoes = document.querySelector(".option");
-    divOpcoes.classList.toggle("visivel");
-  }
+// function mostrarOpcoes() {
+//     const divOpcoes = document.querySelector(".option");
+//     divOpcoes.classList.toggle("visivel");
+//   }
