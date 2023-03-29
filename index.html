@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 
-	<script src="teste.js"></script>
+	<script src="./functios.js" defer type="module"></script>
+	<script src="./teste.js" type='module' defer></script>
 	<title>tela 1</title>
 </head>
 
@@ -41,18 +42,7 @@
 				</div>
 			</div>
 
-			<script>
-				var divPrincipal = document.getElementById("status");
-				var divOpcoes = document.getElementById("div-opcoes");
-
-				divPrincipal.addEventListener("click", function () {
-					if (divOpcoes.style.display === "none") {
-						divOpcoes.style.display = "block";
-					} else {
-						divOpcoes.style.display = "none";
-					}
-				});
-			</script>
+			
 
 			<div class="optionRommSquareFinished">
 				<span class="legend">LEGENDA</span>
@@ -97,10 +87,10 @@
 		</div>
 
 
-		<div class="main2" id="segundario">
+		<div class="main2 test" id="segundario">
 			<h1 class="nameClassRoomescolhida">Desenvolvimento de sistemas </h1>
 
-			<div class="alunos">
+			<div class="alunos" id="alunos">
 
 				<div class="containerAlunos" class="containerAlunos">
 					<div class="containerAluno">
@@ -109,7 +99,7 @@
 					</div>
 				</div>
 
-				<div class="containerAlunos" class="containerAlunos">
+				<div class="containerAlunos" class="containerAlunos" id="containerAlunos">
 					<div class="containerAluno">
 						<img src="img/aluno.png" alt="" class="imgAluno">
 						<span class="nameAluno">Guilheme</span>
@@ -139,20 +129,7 @@
 
 			</div>
 		</div>
-		<script>
-			const room = document.querySelectorAll('.room');
-			const main = document.getElementById('principal');
-			const main2 = document.getElementById('segundario');
-
-
-			room.forEach(function (element) {
-				console.log(element)
-				element.addEventListener('click', function () {
-					main.style.display = 'none';
-					main2.style.display = 'block';
-				});
-			});
-		</script>
+		
 
 		<div class="main3" id="terciario">
 			<div class="alunoselecionado">
@@ -160,43 +137,35 @@
 				<span class="namealunoselecionado">José Matheus da Silva Miranda</span>
 
 			</div>
-			<div class="graphic">
+			<!-- <div class="graphic">
 
-				<div class="aulaSeparada">
-					<div class="numeroNota">90</div>
-					<div class="barraNotas">f
-						<div class="notaColor"></div>
-					</div>
-					<div class="nomeNota">sop</div>
-
-				</div>
-				<div class="aulaSeparada">
-					<div class="numeroNota">90</div>
-					<div class="barraNotas">f</div>
-					<div class="nomeNota">sop</div>
-				</div>
-				<div class="aulaSeparada">
-					<div class="numeroNota">90</div>
-					<div class="barraNotas">f</div>
-					<div class="nomeNota">sop</div>
-				</div>
-			</div>
+                <div class="aulaSeparada">
+                    <div class="numeroNota">90</div>
+                    <div class="barraNotas">
+                        <div class="notaColor"></div>
+                    </div>
+                    <div class="nomeNota">sop</div>
+                   
+                </div>
+                <div class="aulaSeparada">
+                    <div class="numeroNota">90</div>
+                    <div class="barraNotas">
+                        <div class="notaColor"></div>
+                    </div>
+                    <div class="nomeNota">sop</div>
+                </div>
+                <div class="aulaSeparada">
+                    <div class="numeroNota">90</div>
+                    <div class="barraNotas">
+                        <div class="notaColor"></div>
+                    </div>
+                    <div class="nomeNota">sop</div>
+                </div>
+            </div> -->
 		</div>
 
 
-	<script>
-			const containerAlunos = document.querySelectorAll('.containerAlunos');
-			const segundario = document.getElementById('segundario');
-			const terciario = document.getElementById('terciario');
-
-			containerAlunos.forEach(function (element) {
-				console.log(element)
-				element.addEventListener('click', function () {
-					segundario.style.display = 'none';
-					terciario.style.display = 'block';
-				});
-			});
-	</script>
+	
 
 		<main>
 

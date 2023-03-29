@@ -1,21 +1,45 @@
+'use strict'
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   var sign = document.getElementById("sign");
-//   var div1 = document.getElementById("segundario");
-//   var div2 = document.getElementById("terciario");
 
-//   sign.addEventListener('click', function() {
-//     if (div1.style.display === "none") {
-//       div1.style.display = "block";
-//       div2.style.display = "none";
-//     } else {
-//       div1.style.display = "none";
-//       div2.style.display = "block";
-//     }
-//   });
-// });
+				var divPrincipal = document.getElementById("status");
+				var divOpcoes = document.getElementById("div-opcoes");
 
-// function mostrarOpcoes() {
-//     const divOpcoes = document.querySelector(".option");
-//     divOpcoes.classList.toggle("visivel");
-//   }
+				divPrincipal.addEventListener("click", function () {
+					if (divOpcoes.style.display === "none") {
+						divOpcoes.style.display = "block";
+					} else {
+						divOpcoes.style.display = "none";
+					}
+				});
+		
+
+// ---------------------------------------------------------------------------
+
+			const room = document.querySelectorAll('.room');
+			const main = document.getElementById('principal');
+			const main2 = document.getElementById('segundario');
+
+
+			room.forEach(function (element) {
+				console.log(element)
+				element.addEventListener('click', function () {
+					main.style.display = 'none';
+					main2.style.display = 'block';
+				});
+			});
+		
+
+//----------------------------------------------------
+
+
+			const containerAlunos = document.querySelectorAll('.containerAlunos');
+			const segundario = document.getElementById('segundario');
+			const terciario = document.getElementById('terciario');
+
+			containerAlunos.forEach(function (element) {
+				console.log(element)
+				element.addEventListener('click', function () {
+					segundario.style.display = 'none';
+					terciario.style.display = 'block';
+				});
+			});
