@@ -18,15 +18,35 @@
 			const room = document.querySelectorAll('.room');
 			const main = document.getElementById('principal');
 			const main2 = document.getElementById('segundario');
+			const span = document.getElementById("t");
 
 
 			room.forEach(function (element) {
 				console.log(element)
 				element.addEventListener('click', function () {
+
 					main.style.display = 'none';
 					main2.style.display = 'block';
+
+					const span =document.getElementById("t");
+					if(span.textContent ===  "Sair") {
+						span.textContent = "voltar"
+					}else {
+						span.textContent = "sair"
+					}
 				});
 			});
+			span.addEventListener('click', function () {
+				if(span.textContent ==="voltar") {
+					
+				main.style.display = 'block';
+				main2.style.display = 'none';
+				}else {
+
+				}
+
+				
+			  });
 		
 
 //----------------------------------------------------
@@ -43,3 +63,7 @@
 					terciario.style.display = 'block';
 				});
 			});
+//----------------------------------------------------------------------
+
+
+
