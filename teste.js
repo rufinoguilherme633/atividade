@@ -29,6 +29,9 @@
 			const main = document.getElementById('principal');
 			const main2 = document.getElementById('segundario');
 
+			main.style.overflow = 'auto'
+			main.style.height ='100%'
+
 			main2.style.overflow = 'auto'
 			main2.style.height ='100%'
 

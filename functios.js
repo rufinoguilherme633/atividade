@@ -32,7 +32,33 @@
     // }
 
 
-    //  carregarAlunos()
+    // carregarAlunos()
+    const criarMateria = (materia) => {
+        const room = document.createElement("div");
+        room.classList.add("room");
+      
+        const img = document.createElement('img');
+        img.classList.add('imgAula');
+        img.src = materia.icone;
+      
+        const name = document.createElement('span');
+        name.classList.add('nameClassRoom');
+        name.textContent = materia.nome;
+      
+        room.append(img, name);
+      
+        return room;
+      }
+      
+      const carregarAula = () => {
+        const container = document.getElementById('classRoom');
+        const cntatoI = alunos[0].curso.map(criarMateria);
+        container.append(...cntatoI);
+      }
+      
+      carregarAula();
+      
+
     let idIncremental = 1; // variável para gerar um ID único para cada div de aluno
      const criarAlunos = (aluno) => {
         const containerAlunos = document.createElement('div');
