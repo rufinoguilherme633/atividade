@@ -29,7 +29,7 @@ header{
 
 .headerSecondary{
 	background-color:#BCC2E5;
-	 display:flex; 
+	 display:none; 
 	flex-direction:row;
 	align-items:center;
 	justify-content:space-between;
