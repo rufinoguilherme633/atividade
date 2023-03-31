@@ -13,13 +13,13 @@
 					}
 				});
 
-				divOpcoes.addEventListener("click", function () {
-					if (divOpcoes.textContent = "Status") {
-						main2.backgroundColor = 'red'
-					} else {
+				// divOpcoes.addEventListener("click", function () {
+				// 	if (divOpcoes.textContent = "Status") {
+				// 		main2.backgroundColor = 'red'
+				// 	} else {
 						
-					}
-				});
+				// 	}
+				// });
 		
 		
 

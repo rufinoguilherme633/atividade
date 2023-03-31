@@ -1,0 +1,166 @@
+@media screen and (max-width: 400px) {
+/* .imgPersonMain,.imgDispositivos{
+    display: none;
+} */
+/* .main {
+    justify-content: center;
+} */
+
+
+.containerLogotext {
+    margin-left: 6vw;
+}
+.imgLogo {
+      width: 5vw;
+    height: 4vh;
+}
+.imgLogoSign {
+    width: 5vw;
+    height: 3vh;
+}
+.LionSchool, .Sign {
+    font-size: 3vw;
+    line-height: 3vw;
+}
+
+.main {
+    flex-direction: column;
+}
+
+.titleChooseCourse {
+    font-size: 7.2vw;
+  
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+}
+.imgDispositivos {
+    /* width: 100%;
+    height: 40vh; */
+    /* background-color: pink; */
+    /* justify-content: center;
+    display: flex; */
+    display: none;
+}
+.imgPersonMain{
+    display: none;
+}
+.imgAula {
+    width: 10vw;
+    height: 4vh;
+}
+.room {
+    height: 20vh;
+    width: 80vw;
+}
+
+.nameClassRoom{
+    font-size: 7vw;
+  
+}
+/* footer */
+.imgcontact {
+    height: 2vh;
+    width: 4vw;
+}
+
+.textContacts {
+    font-size: 3vw;
+}
+.contacts {
+    align-items: center;
+    gap: 1vh;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    background-color: royalblue;
+}
+.footer {
+     flex-direction: column; 
+     height: 25vh;
+     
+}
+
+.social-icon {
+    margin-top: 3vh;
+    height: 7vw;
+    width:  7vw;
+}
+.fab ,.fab, .fa-brands{
+	height: 2.2vw;
+}
+
+/* mai2 */
+
+/* headersecundary */
+.textStatus {
+    font-size: 4vw;
+}
+.legend, .textSquare, .textFinished {
+    font-size: 2.8vw;
+}
+
+.nameClassRoomescolhida {
+
+    font-size: 10vw;
+    line-height: 6.5vh;
+    height: max-content;
+}
+
+.colorSquareDivFinished {
+    width: 3vw;
+    height: 2vh;
+}
+.alunos {
+    flex-direction: column;
+    
+}
+.containerAluno {
+    width: 35vw;
+    height: 40vh;
+}
+.nameAluno{
+    font-size: 5vw;
+    width: 29vw;
+    line-height: 4.5vh;
+}
+
+
+
+  /* main3 */
+  .main3 {
+      margin-top: 4vh;
+      margin-bottom:4vh ;
+     flex-direction: column;
+      gap: 4vh; 
+    
+  }
+  .alunoselecionado,.graphic {
+      width: 60vw;
+      justify-content: center;
+  padding: 0;
+  margin: 0;   
+
+  }
+
+.graphic {
+    flex-direction: column;
+}
+  
+  .imgalunoescolhido {
+      width: 50vw;
+
+  }
+.namealunoselecionado {
+    font-size: 4vw;
+}
+ .aulaSeparada {
+     flex-direction: row;
+   
+ }
+ .barraNotas{
+
+     width: 50vw;
+     height: 3vh;
+ }
+}

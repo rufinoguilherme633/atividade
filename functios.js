@@ -105,27 +105,27 @@
     // -----------------------------------------------
 
 
-    const aluno = () => {
-        const containerAlunos = document.createElement('div');
-        containerAlunos.classList.add('alunoselecionado');
+    // const aluno = () => {
+    //     const containerAlunos = document.createElement('div');
+    //     containerAlunos.classList.add('alunoselecionado');
        
 
-        const img = document.createElement('img')
-        img.classList.add('imgalunoescolhido')
-        img.src = `./img/aluno.png`
+    //     const img = document.createElement('img')
+    //     img.classList.add('imgalunoescolhido')
+    //     img.src = `./img/aluno.png`
 
-        const name = document.createElement('span')
-        name.classList.add('namealunoselecionado')
-        name.textContent = aluno.nome
+    //     const name = document.createElement('span')
+    //     name.classList.add('namealunoselecionado')
+    //     name.textContent = aluno.nome
 
-        containerAluno.append(img, name);
+    //     containerAluno.append(img, name);
         
-    }
+    // }
 
-    const carregaAlunoIndividual = () => {
-        const container = document.getElementById('alunoselecionado');
-        const cntatoI = alunos.map(criarAlunos);
-        container.append(...cntatoI);
-    }
+    // const carregaAlunoIndividual = () => {
+    //     const container = document.getElementById('alunoselecionado');
+    //     const cntatoI = alunos.map(criarAlunos);
+    //     container.append(...cntatoI);
+    // }
 
-    carregaAlunoIndividual()
+    // carregaAlunoIndividual()
