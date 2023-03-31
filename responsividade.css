@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+@media(max-width: 300px) {
 /* .imgPersonMain,.imgDispositivos{
     display: none;
 } */
@@ -9,6 +9,7 @@
 
 .containerLogotext {
     margin-left: 6vw;
+  
 }
 .imgLogo {
       width: 5vw;
