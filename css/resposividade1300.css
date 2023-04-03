@@ -1,0 +1,49 @@
+@media(max-width: 1300px) {
+  .imgLogo {
+    width: 6vw;
+  height: 6vh;
+}
+.imgPersonMain{
+  display: none;
+}
+  .imgDispositivos {
+    height: 30vh;
+    width: 35vw;
+    /* display: none; */
+    
+}
+.room {
+  /* margin-top: 4vh; */
+  /* height: 15vh; */
+  width: 30vw;
+  height: 20vh;
+
+}
+.textStatus {
+  font-size: 1.5vw;
+}
+
+.textContacts {
+  font-size: 1.5vw;
+}
+.colorSquareDivFinished {
+  height: 1.5vh;
+  width: 1.5vw;
+}
+
+.legend{
+  font-size: 1.4vw;
+}
+.textSquare,.textFinished {
+  font-size: 1.3vw;
+}
+
+
+.alunoselecionado, .graphic {
+  width: 30vw;
+}
+.namealunoselecionado {
+  font-size: 1.5vw;
+}
+
+}

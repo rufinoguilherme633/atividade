@@ -109,7 +109,11 @@ font-style: normal;
 font-weight: 500;
 font-size: 1vw;
 color: #3347B0;
-
+}
+.textsSquares {
+	display: flex;
+	flex-direction: row;
+	gap: 0.6vw;
 }
 
 .finished{
@@ -181,10 +185,12 @@ main{
 	align-items:center;
 	height: 70vh;
 	/* padding:20vw; */
-	margin-top: 2vh;
-	margin-bottom: 2vh;
+	/* margin-top: 2vh;
+	margin-bottom: 2vh; */
 	margin-left: 3vw;
 	margin-right: 3vw;
+	min-height: 70vh;
+
 }
 
 .imgPersonMain{
@@ -465,15 +471,15 @@ align-items: center;
 
 /* ----------------------------------------------------------------------------------- */
 
-.main3 {
+/* .main3 { */
 	/* display: none; */
-	display: none;
+	/* display: none;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 100%; */
     /* background-color: red; */
-    height: 70vh;
+    /* height: 70vh;
  
 }
 
@@ -503,10 +509,10 @@ align-items: center;
 
 }
 
-.imgalunoescolhido {
+.imgalunoescolhido { */
     /* width: 400px;
     height: 400px; */
-    background-color: #3347B0;
+    /* background-color: #3347B0;
     display: flex;
     width: 80%;
     height: 30vh;
@@ -518,12 +524,153 @@ align-items: center;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center; */
+    /* gap: 30px; */
+    /* margin-right: 15vw;
+}
+
+.namealunoselecionado { */
+    /* width: 400px; */
+    /* width: max-content; */
+    /* font-style: normal; */
+    /* font-weight: 500; */
+    /* font-size: 1vw; */
+    /* line-height: 27px; */
+    /* text-align: center;
+    text-transform: uppercase;
+    color: #3347B0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.barraNotas {
+    width: 0.9vw;
+    height: 30vh;
+    background: #EEEFF8; */
+     /* display: flex; */
+  /* justify-content: flex-end;
+  align-items: flex-end ; */
+  /* display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 0px 24px #3347B0;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.notaColor {
+    height:80% ;
+    background-color: #3347B0;
+    display: flex;
+    width: 100%;
+    
+}
+.nomeNota{
+
+	font-size: 1vw;
+
+font-style: normal;
+font-weight: 700; */
+/* font-size: 18px; */
+/* line-height: 27px; */
+/* identical to box height */
+/* 
+text-align: center;
+text-transform: uppercase;
+
+color: #3347B0;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.numeroNota { */
+   
+/* width: 37px;
+height: 27px; */
+/* 
+font-weight: 700;
+font-size: 1.5vw; */
+/* line-height: 27px; */
+/* text-transform: uppercase;
+color: #3347B0;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+
+/* font-family: 'Poppins';
+font-style: normal;
+font-weight: 700; */
+/* font-size: 18px; */
+/* line-height: 27px; */
+/* identical to box height */
+
+/* 
+color: #3347B0;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.aulaSeparada {
+    display: flex;
+    flex-direction: column;
+	gap: 1vw; */
+	/* background-color: red; */
+	/* align-items: center;
+} */
+
+.aluno-container {
+	/* display: none; */
+	display: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+    height: 70vh;
+ 
+}
+
+.aluno {
+    margin-left: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.aluno,
+.graphic-container {
+    width: 20vw;
+    height:60vh;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.graphic-container {
+	justify-content: space-between;
+	display: flex;
+
+}
+
+.aluno__image {
+    /* width: 400px;
+    height: 400px; */
+    background-color: #3347B0;
+    display: flex;
+    width: 80%;
+    height: 30vh;
+
+}
+
+.graphic-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     /* gap: 30px; */
     margin-right: 15vw;
 }
 
-.namealunoselecionado {
+.aluno__name {
     /* width: 400px; */
     /* width: max-content; */
     /* font-style: normal; */
@@ -536,7 +683,7 @@ align-items: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.barraNotas {
+.grader-bar {
     width: 0.9vw;
     height: 30vh;
     background: #EEEFF8;
@@ -549,7 +696,7 @@ align-items: center;
   border-radius: 4px 4px 0px 0px;
 }
 
-.notaColor {
+.bar__grade {
     height:80% ;
     background-color: #3347B0;
     display: flex;
@@ -573,7 +720,7 @@ color: #3347B0;
 
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.numeroNota {
+.graphic__grade {
    
 /* width: 37px;
 height: 27px; */
@@ -598,7 +745,7 @@ color: #3347B0;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.aulaSeparada {
+.graphic__subject {
     display: flex;
     flex-direction: column;
 	gap: 1vw;

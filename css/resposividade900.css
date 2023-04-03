@@ -1,0 +1,24 @@
+@media(max-width: 1000px) {
+/* .containerAluno {
+    background-color: aliceblue;
+} */
+
+
+/* .alunoselecionado, .graphic {
+    width: 40vw;
+    height: 50vh;
+
+}
+.main3 {
+    gap: 4vw;
+} */
+/* .room {
+    flex-direction: column;
+} */
+
+.containerAluno {
+    background-color: aqua;
+    width: 25vw;
+  
+}
+}

@@ -24,10 +24,11 @@
 		
 
 // ---------------------------------------------------------------------------
+// troca da 1 tela para a segunda tels
 
 			const room = document.querySelectorAll('.room');
 			const main = document.getElementById('principal');
-			const main2 = document.getElementById('segundario');
+			const main2 = document.getElementById('studants');
 
 			main.style.overflow = 'auto'
 			main.style.height ='100%'
@@ -36,7 +37,8 @@
 			main2.style.height ='100%'
 
 		
-		const main3 = document.getElementById('terciario')
+		// const main3 = document.getElementById('terciario')
+		const main3 = document.getElementById('student')
 			const span = document.getElementById("t");
 			const headerSecondary = document.getElementById('headerSecondary')
 
@@ -66,6 +68,8 @@ nameClassRoom.textContent =newClassName;
 					
 				});
 			});
+
+			
 			span.addEventListener('click', function () {
 				if(span.textContent ==="Sair") {
 
@@ -88,6 +92,7 @@ nameClassRoom.textContent =newClassName;
 							main2.style.display = 'block';
 							main3.style.display = 'none'
 							main.style.display = 'none';
+							headerSecondary.style.display = "flex"
 						}
 
 				}
@@ -102,8 +107,9 @@ nameClassRoom.textContent =newClassName;
 
 
 			const containerAluno = document.querySelectorAll('.containerAlunos');
-			const segundario = document.getElementById('segundario');
-			const terciario = document.getElementById('terciario');
+			const segundario = document.getElementById('studants');
+			// const terciario = document.getElementById('terciario');
+			const terciario = document.getElementById('student');
 			// const headerSecondary = document.getElementById('headerSecondary')
 
 
