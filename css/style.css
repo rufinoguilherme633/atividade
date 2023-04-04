@@ -406,6 +406,8 @@ background: #3347B0;
 box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25);
 align-items: center;
 flex: 1 0 25%;
+    height: 450px;
+  /* max-height: 450px;   */
 }
 
 .containerAluno:nth-child(4n) {
@@ -430,12 +432,13 @@ color: #FFFFFF;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 /* background-color: red; */
 /* height: ; */
-width: 15vw;
-height: 15vh;
+/* width: 15vw;
+height: 15vh; */
 /* background-color: pink; */
 display: flex;
 align-items: center;
 justify-content: center;
+
 /* background-color: pink; */
 
 }
@@ -621,6 +624,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
     /* background-color: red; */
     height: 70vh;
+    min-height: 70vh;
  
 }
 

@@ -4,12 +4,12 @@
 } */
 
 
-/* .alunoselecionado, .graphic {
-    width: 40vw;
+ /* .alunoselecionado, .graphic {
+    width: 400vw;
     height: 50vh;
 
-}
-.main3 {
+} */
+/*.main3 {
     gap: 4vw;
 } */
 /* .room {
@@ -18,7 +18,27 @@
 
 .containerAluno {
     background-color: aqua;
-    width: 25vw;
-  
+    /* width: 25vw; */
+    max-height: 35vh;
 }
+.nameAluno {
+    font-size: 2.3vw;
+}
+.aluno-container {
+    flex-direction: column;
+    background-color: aquamarine;
+    gap: 40px;
+   
+
+}
+
+.aluno,
+.graphic-container{
+    padding: 0;
+    margin: 0;
+    width: 35vw;
+    height: 50vh;
+
+}
+
 }

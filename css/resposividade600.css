@@ -44,8 +44,8 @@
 }
 .room {
     /* margin-top: 4vh; */
-    height: 15vh;
-    width: 50vw;
+    height: 20vh;
+    width: 70vw;
 
 }
 .imgAula {
@@ -94,10 +94,26 @@ li .social {
 .containerAluno {
     width: 35vw;
     height: 40vh;
+    gap: 10px;
+  
+ 
 }
 .nameAluno{
     font-size: 5vw;
-    width: 29vw;
-    line-height: 4.5vh;
+    width: 100%;
+    line-height: 6vw;
+    /* background-color: aqua; */
+    max-height: 13vh;
+}
+.aluno,
+.graphic-container{
+    padding: 0;
+    margin: 0;
+    width: 50vw;
+    height: 40vh;
+
+}
+.aluno__name {
+    font-size: 3vw;
 }
 }
