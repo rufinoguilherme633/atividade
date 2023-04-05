@@ -288,12 +288,13 @@ async function getAlunos() {
   const alunos = data.alunos.map(aluno =>{
     return {
       nome_aluno: aluno.nome_aluno,
-      image_aluno: aluno.image_aluno  
+      image_aluno: aluno.image_aluno,
+      status_aluno: aluno.status
     }
   })
  return alunos
 }
-getAlunos()
+
 
 
 let idIncremental = 1; // variável para gerar um ID único para cada div de aluno
@@ -308,8 +309,8 @@ const criarAlunos = (aluno) => {
 
   containerAluno.id = `containerAluno-${idIncremental}`; // utiliza a variável incremental para gerar um ID único
 
-  // if (aluno.status === 'Finalizado') { containerAluno.style.backgroundColor = '#3347B0' }
-  // else { containerAluno.style.backgroundColor = ' #E5B657' }
+  if (aluno.status_aluno === 'Finalizado') { containerAluno.style.backgroundColor = '#3347B0' }
+  else { containerAluno.style.backgroundColor = ' #E5B657' }
 
 
 
@@ -341,13 +342,14 @@ const carregarAlunos = async () => {
 }
 
 carregarAlunos();
+const alunos = await getAlunos
 const opcoesStatus = document.querySelector('#div-opcoes');
 
 opcoesStatus.addEventListener('click', (event) => {
   const opcaoSelecionada = event.target.textContent.trim();
 
   if (opcaoSelecionada === 'Finalizado') {
-    const alunosFinalizados = alunos.filter(aluno => aluno.status === 'Finalizado');
+    const alunosFinalizados = alunos.filter(aluno => status_aluno === 'Finalizado');
     const container = document.getElementById('alunos');
     container.innerHTML = '';
     const alunosFiltrados = alunosFinalizados.map(criarAlunos);
@@ -371,6 +373,7 @@ opcoesStatus.addEventListener('click', (event) => {
     container.append(...alunosFiltrados);
   }
 });
+getAlunos()
 
 
 // -----------------------------------------------
@@ -415,8 +418,3 @@ opcoesStatus.addEventListener('click', (event) => {
 //   }
 
 //   getCursos()
-
-
-
-
-
