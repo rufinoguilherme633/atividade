@@ -242,34 +242,34 @@
 //----------------------------------------------------
 
 
-			const containerAluno = document.querySelectorAll('.containerAlunos');
-			const segundario = document.getElementById('studants');
-			// const terciario = document.getElementById('terciario');
-			const terciario = document.getElementById('student');
-			// const headerSecondary = document.getElementById('headerSecondary')
+				// const containerAluno = document.querySelectorAll('.containerAlunos');
+				// const segundario = document.getElementById('studants');
+				// // const terciario = document.getElementById('terciario');
+				// const terciario = document.getElementById('student');
+				// // const headerSecondary = document.getElementById('headerSecondary')
 
 
-			// containerAluno.forEach(function (element) {
-			// 	element.addEventListener('click', function (event) {
-			// 	  var alunoId = event.target.id; // obtém o id do aluno clicado
-			// 	  var alunoInfo = document.getElementById(alunoId + '-info'); // obtém as informações específicas do aluno
-			// //    alunoInfo.style.display = 'block'; // exibe as informações
-			// 	console.log(alunoInfo)
-			// 	});s
-			//   });
+				// // containerAluno.forEach(function (element) {
+				// // 	element.addEventListener('click', function (event) {
+				// // 	  var alunoId = event.target.id; // obtém o id do aluno clicado
+				// // 	  var alunoInfo = document.getElementById(alunoId + '-info'); // obtém as informações específicas do aluno
+				// // //    alunoInfo.style.display = 'block'; // exibe as informações
+				// // 	console.log(alunoInfo)
+				// // 	});s
+				// //   });
 
-			student.style.overflow = 'auto'
-			student.style.height ='100%'
+				// student.style.overflow = 'auto'
+				// student.style.height ='100%'
 
 
-			containerAluno.forEach(function (element) {
-				console.log(element)
-				element.addEventListener('click', function () {
-					segundario.style.display = 'none';
-					terciario.style.display = 'flex';
-					headerSecondary.style.display = 'none';
-				});
-			});
+				// containerAluno.forEach(function (element) {
+				// 	console.log(element)
+				// 	element.addEventListener('click', function () {
+				// 		segundario.style.display = 'none';
+				// 		terciario.style.display = 'flex';
+				// 		headerSecondary.style.display = 'none';
+				// 	});
+				// });
 // //----------------------------------------------------------------------
 
 

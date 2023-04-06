@@ -173,9 +173,9 @@ async function getCursos() {
   const cursos = data.cursos.map(curso => {
     console.log(data)
     return {
-      nome: curso.nome_curso,
-      icone: curso.icone_curso,
-      sigla: curso.sigla_curso
+      nome: curso.Curso,
+      icone: curso.Icone,
+      sigla: curso.Sigla_Curso
     };
   });
   return cursos;
@@ -287,14 +287,14 @@ async function getAlunos() {
   console.log("-------------------------------------------")
   const alunos = data.alunos.map(aluno =>{
     return {
-      nome_aluno: aluno.nome_aluno,
-      image_aluno: aluno.image_aluno,
-      status_aluno: aluno.status
+      nome_aluno: aluno.Nome,
+      image_aluno: aluno.Perfil,
+      status_aluno: aluno.Status,
+      curso_aluno: aluno.Curso
     }
   })
  return alunos
 }
-
 
 
 let idIncremental = 1; // variável para gerar um ID único para cada div de aluno
@@ -312,13 +312,9 @@ const criarAlunos = (aluno) => {
   if (aluno.status_aluno === 'Finalizado') { containerAluno.style.backgroundColor = '#3347B0' }
   else { containerAluno.style.backgroundColor = ' #E5B657' }
 
-
-
-
-
   const img = document.createElement('img')
   img.classList.add('imgAluno')
-  img.src = `./img/aluno.png`
+  img.src = aluno.image_aluno
 
   const name = document.createElement('span')
   name.classList.add('nameAluno')
@@ -331,73 +327,149 @@ const criarAlunos = (aluno) => {
 
   idIncremental++; // incrementa a variável incremental para gerar um novo ID único para a próxima div de aluno
 
+  
   return containerAlunos;
 }
+
+
+
 
 const carregarAlunos = async () => {
   const container = document.getElementById('alunos');
   const alunos = await getAlunos();
   const cntatoI = alunos.map(criarAlunos);
   container.append(...cntatoI);
+  addClickListeners();
 }
+const container = document.getElementById('alunos');
+const main2 = document.querySelector('.main2');
+const student = document.getElementById('student');
+
+// Function to handle click event on each containerAluno element
+const handleClick = (event) => {
+  const containerAluno = event.currentTarget;
+  main2.style.display = 'none'; // hide main2
+  student.style.display = 'flex'; // show student
+};
+
+// Add event listener to each containerAluno element
+const addClickListeners = () => {
+  const containerAlunos = container.querySelectorAll('.containerAlunos');
+  containerAlunos.forEach((containerAluno) => {
+    containerAluno.addEventListener('click', handleClick);
+  });
+};
+
+// Function to create student container based on selected student
+const createStudentContainer = (aluno) => {
+  const container = document.createElement('div');
+  container.classList.add('aluno-container');
+  container.id = 'student';
+
+  const alunoContainer = document.createElement('div');
+  alunoContainer.classList.add('aluno');
+  alunoContainer.id = 'alunoselecionado';
+  const img = document.createElement('img');
+  img.classList.add('aluno__image');
+  img.src = aluno.image_aluno;
+  const name = document.createElement('span');
+  name.classList.add('aluno__name');
+  name.textContent = aluno.nome_aluno;
+  alunoContainer.append(img, name);
+
+  const graphicContainer = document.createElement('div');
+  graphicContainer.classList.add('graphic-container');
+
+  // Code to create graphic__subject elements goes here
+
+  container.append(alunoContainer, graphicContainer);
+
+  return container;
+};
+
 
 carregarAlunos();
-const alunos = await getAlunos
-const opcoesStatus = document.querySelector('#div-opcoes');
+// const alunos = await getAlunos
+// const opcoesStatus = document.querySelector('#div-opcoes');
 
-opcoesStatus.addEventListener('click', (event) => {
-  const opcaoSelecionada = event.target.textContent.trim();
 
-  if (opcaoSelecionada === 'Finalizado') {
-    const alunosFinalizados = alunos.filter(aluno => status_aluno === 'Finalizado');
-    const container = document.getElementById('alunos');
-    container.innerHTML = '';
-    const alunosFiltrados = alunosFinalizados.map(criarAlunos);
 
-    container.append(...alunosFiltrados);
-  }
-  else if (opcaoSelecionada === 'Cursando') {
-    const alunosCursando = alunos.filter(aluno => aluno.status === 'Cursando');
-    const container = document.getElementById('alunos');
-    container.innerHTML = '';
-    const alunosFiltrados = alunosCursando.map(criarAlunos);
+// opcoesStatus.addEventListener('click', async event => {
+//   const opcaoSelecionada = event.target.textContent.trim();
+//   const alunos = await getAlunos();
+//   console.log("estou chamando")
+//   if (opcaoSelecionada === 'Finalizado') {
+//     const alunosFinalizados = alunos.filter(aluno => status_aluno === 'Finalizado');
+//     const container = document.getElementById('alunos');
+//     container.innerHTML = '';
+//     const alunosFiltrados = alunosFinalizados.map(criarAlunos);
 
-    container.append(...alunosFiltrados);
+//     container.append(...alunosFiltrados);
+//   }
+//   else if (opcaoSelecionada === 'Cursando') {
+//     const alunosCursando = alunos.filter(aluno => aluno.status === 'Cursando');
+//     const container = document.getElementById('alunos');
+//     container.innerHTML = '';
+//     const alunosFiltrados = alunosCursando.map(criarAlunos);
 
-  } else if (opcaoSelecionada === 'Status') {
-    const alunosCursando = alunos
-    const container = document.getElementById('alunos');
-    container.innerHTML = '';
-    const alunosFiltrados = alunosCursando.map(criarAlunos);
+//     container.append(...alunosFiltrados);
 
-    container.append(...alunosFiltrados);
+//   } else if (opcaoSelecionada === 'Status') {
+//     const alunosCursando = alunos
+//     const container = document.getElementById('alunos');
+//     container.innerHTML = '';
+//     const alunosFiltrados = alunosCursando.map(criarAlunos);
+
+//     container.append(...alunosFiltrados);
+//   }
+// });
+
+
+
+const statusDivoption = document.querySelector('.statusDivoption');
+const divOpcoes = document.getElementById('div-opcoes');
+
+statusDivoption.addEventListener('click', () => {
+  if (divOpcoes.style.display === 'none') {
+    divOpcoes.style.display = 'block';
+  } else {
+    divOpcoes.style.display = 'none';
   }
 });
+
+document.addEventListener('click', (event) => {
+  if (!statusDivoption.contains(event.target)) {
+    divOpcoes.style.display = 'none';
+  }
+});
+
 getAlunos()
 
 
 // -----------------------------------------------
 
 
-// const aluno = () => {
+// const criarAluno = (aluno) => {
 //     const containerAlunos = document.createElement('div');
 //     containerAlunos.classList.add('alunoselecionado');
 
 
 //     const img = document.createElement('img')
-//     img.classList.add('imgalunoescolhido')
+//     img.classList.add('"aluno__image')
 //     img.src = `./img/aluno.png`
 
 //     const name = document.createElement('span')
-//     name.classList.add('namealunoselecionado')
-//     name.textContent = aluno.nome
+//     name.classList.add('aluno__name')
+//     name.textContent = "test"
 
-//     containerAluno.append(img, name);
+//     containerAlunos.append(img, name);
+
+//     return containerAlunos
 
 // }
 
-// const carregaAlunoIndividual = () => {
-//     const container = document.getElementById('alunoselecionado');
+// const carregaAlunoIndividual = async () => {
+//     const container = document.getElementById('student');
 //     const cntatoI = alunos.map(criarAlunos);
 //     container.append(...cntatoI);
 // }
