@@ -1,4 +1,3 @@
-
 'use strict'
 const urlCurso = "http://localhost:8080/v1/lion-school/cursos";
 
@@ -47,7 +46,7 @@ const carregarAula = async () => {
     rooms.forEach(room => {
       room.addEventListener('click', () => {
         const cursoSelecionado = room.querySelector('.nameClassRoom').textContent;
-        const alunos = filtrarAlunos(cursoSelecionado);
+     
         console.log(alunos);
         // adicionar código para exibir os alunos na tela
       });
@@ -117,6 +116,7 @@ const carregarAula = async () => {
   });
 }
 
+
 carregarAula();
 // ---------------------------------------------------------------------------------------
 const urlgetlistStudents = "http://localhost:8080/v1/lion-school/alunos"
@@ -170,6 +170,69 @@ const carregarAlunos = async () => {
   container.append(...cntatoI);
   addClickListeners();
 }
+const statusDivoption = document.querySelector('.statusDivoption');
+const divOpcoes = document.getElementById('div-opcoes');
+
+statusDivoption.addEventListener('click', () => {
+  if (divOpcoes.style.display === 'none') {
+    divOpcoes.style.display = 'block';
+  } else {
+    divOpcoes.style.display = 'none';
+  }
+});
+document.addEventListener('click', (event) => {
+  if (!statusDivoption.contains(event.target)) {
+    divOpcoes.style.display = 'none';
+  }
+});
+
+// Adicionando um event listener para a li "Finalizado"
+const finalizado = document.querySelector('.finalizado');
+finalizado.addEventListener('click', async () => {
+  const alunos = await getAlunos();
+  const filteredAlunos = alunos.filter(aluno => aluno.status_aluno === 'Finalizado');
+
+  const container = document.getElementById('alunos');
+  container.innerHTML = '';
+
+  const cntatoI = filteredAlunos.map(criarAlunos);
+  container.append(...cntatoI);
+
+
+  addClickListeners()
+  
+});
+
+const cursando = document.querySelector('.cursando');
+cursando.addEventListener('click', async () => {
+  const alunos = await getAlunos();
+  const filteredAlunos = alunos.filter(aluno => aluno.status_aluno === 'Cursando');
+
+  const container = document.getElementById('alunos');
+  container.innerHTML = '';
+
+  const cntatoI = filteredAlunos.map(criarAlunos);
+  container.append(...cntatoI);
+  addClickListeners()
+});
+
+
+
+const status = document.querySelector('.status');
+status.addEventListener('click', async () => {
+  const alunos = await getAlunos();
+  const filteredAlunos = alunos.filter(aluno => aluno.status_aluno === 'Cursando' ||  aluno.status_aluno === 'Finalizado');
+
+  const container = document.getElementById('alunos');
+  container.innerHTML = '';
+
+  const cntatoI = filteredAlunos.map(criarAlunos);
+  container.append(...cntatoI);
+  addClickListeners()
+});
+// Restante do código JavaScript
+// ...
+
 const container = document.getElementById('alunos');
 const main2 = document.querySelector('.main2');
 const student = document.getElementById('student');
@@ -190,27 +253,10 @@ const addClickListeners = () => {
   });
 };
 
+
 carregarAlunos();
 
-const statusDivoption = document.querySelector('.statusDivoption');
-const divOpcoes = document.getElementById('div-opcoes');
 
-statusDivoption.addEventListener('click', () => {
-  if (divOpcoes.style.display === 'none') {
-    divOpcoes.style.display = 'block';
-  } else {
-    divOpcoes.style.display = 'none';
-  }
-});
-document.addEventListener('click', (event) => {
-  if (!statusDivoption.contains(event.target)) {
-    divOpcoes.style.display = 'none';
-  }
-});
 
 getAlunos()
-
-
-console.log("-----------------------------------")
-
 
