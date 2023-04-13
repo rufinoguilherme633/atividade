@@ -160,6 +160,7 @@ const criarAlunos = (aluno) => {
   containerAlunos.append(containerAluno);
 
   idIncremental++; // incrementa a variável incremental para gerar um novo ID único para a próxima div de aluno
+  
   return containerAlunos;
 }
 
@@ -238,12 +239,19 @@ const main2 = document.querySelector('.main2');
 const student = document.getElementById('student');
 // Function to handle click event on each containerAluno element
 const handleClick = (event) => {
-  
-  // const containerAluno = event.currentTarget;
   main2.style.display = 'none'; // hide main2
   student.style.display = 'flex'; // show student
   headerSecondary.style.display = "none"
+  
+  const newClassName = event.currentTarget.querySelector(".nameAluno").textContent;
+  const perfilAluno= event.currentTarget.querySelector(".imgAluno").src;
+  const nameClassRoom = document.querySelector(".aluno__name");
+  const perfilClassRoom = document.querySelector(".aluno__image");
+  nameClassRoom.textContent = newClassName;
+  perfilClassRoom.src = perfilAluno;
 };
+
+
 
 // Add event listener to each containerAluno element
 const addClickListeners = () => {
