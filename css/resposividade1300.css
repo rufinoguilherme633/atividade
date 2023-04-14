@@ -19,10 +19,10 @@
   height: 20vh;
 
 }
-/* .containerAluno {
-  width: 300px;
-  height: 50vh;
-} */
+.containerAluno {
+  width: 210px;
+  height: 40vh;
+}
 .textStatus {
   font-size: 1.5vw;
 }
