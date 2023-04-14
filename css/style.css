@@ -47,6 +47,7 @@ font-size: 1vw;
 color: #3347B0;
 margin-left:9vw;
 width: max-content;
+cursor: pointer;
 
 }
 
@@ -171,6 +172,7 @@ height: 4vh;
 	font-size: 1.5vw;
 font-weight: 500;
 /* line-height: 42px; */
+cursor: pointer;
 }
 
 main{
@@ -235,6 +237,7 @@ align-items:center;
 gap:3vw;
 justify-content:center;
 padding: 5vw;
+cursor: pointer;
 }
 
 .nameClassRoom{
@@ -408,6 +411,7 @@ align-items: center;
 flex: 1 0 25%;
     height: 450px;
   /* max-height: 450px;   */
+  cursor: pointer;
 }
 
 .containerAluno:nth-child(4n) {
@@ -461,14 +465,16 @@ color: white;
 font-style: normal;
 font-weight: 500;
 /* background-color: red; */
-height: 10vh;
-font-size: 5vw;
+/* height: 10vh; */
+font-size: 4.5vw;
 line-height: 75px;
 /* background-color: tomato; */
 display: flex;
 justify-content: center;
 color:  #3347B0;
 align-items: center;
+
+
 
 }
 
