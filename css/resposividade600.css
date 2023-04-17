@@ -38,7 +38,6 @@
       margin-top: 4vh; 
 }
 .room {
-    /* margin-top: 4vh; */
     height: 20vh;
     width: 70vw;
 
@@ -82,10 +81,6 @@ li .social {
     width: 3.5vw;
     height: 2.5vh;
 }
-/* .alunos {
-    flex-direction: column;
-    
-} */
 
 .containerAluno {
     width: 210px;
@@ -101,7 +96,6 @@ li .social {
     font-size: 4vw;
     width: 100%;
     line-height: 6vw;
-    /* background-color: aqua; */
     max-height: 13vh;
 }
 .aluno,

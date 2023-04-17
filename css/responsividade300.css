@@ -33,15 +33,8 @@
   
     width: 100%;
     height: 5vh;
-    /* margin-bottom: 5vh;
-    margin-top: 2vh; */
 }
 .imgDispositivos {
-    /* width: 100%;
-    height: 40vh; */
-    /* background-color: pink; */
-    /* justify-content: center;
-    display: flex; */
     display: none;
 }
 .imgPersonMain{
@@ -91,9 +84,7 @@
 	height: 2.2vw;
 }
 
-/* mai2 */
 
-/* headersecundary */
 .textStatus {
     font-size: 6.5vw;
 }

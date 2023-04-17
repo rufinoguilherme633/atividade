@@ -44,8 +44,6 @@ cursor: pointer;
 	display:flex;
 	flex-direction:row;
 	margin-right:9vw;
-	/* background-color: teal; */
-	/* width: max-content; */
 	align-items: center;
 
 }
@@ -55,23 +53,16 @@ cursor: pointer;
 }
 
 .legend{
-	/* width: 70px; */
-/* height: 19px; */
 font-style: normal;
-/* font-weight: 500; */
 font-size: 0.9vw;
 color: #3347B0;
 margin-right:3vw;
-/* background-color: #019cfe; */
-
 }
 
 #div-opcoes {
-
     background: #3347B0;
         border: 1px solid #ccc;
         padding: 10px;
-    
       }
       
       #div-opcoes ul {
@@ -83,7 +74,7 @@ margin-right:3vw;
       #div-opcoes li {
         margin-bottom: 5px;
         cursor: pointer;
-        color: white;
+   color: white;
         
       }
     
@@ -96,12 +87,12 @@ margin-right:3vw;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
+   
     color: #FFFFFF;
     }
 
 #div-opcoes ul li:hover {
-	/* font-size: 40px; */
+
 	background-color:white;
 	width: 100%;
 	margin: 0;
@@ -120,8 +111,6 @@ height: 2.1vh;
 
 
 .textSquare, .textFinished{
-/* width: 5vw;
-height: 19px; */
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;

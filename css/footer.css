@@ -17,7 +17,6 @@ footer{
 .contacts{
 	display:flex;
 	flex-direction:column;
-	/* line-height:30px; */
 	display:flex;
 	gap:2vh;
 }
@@ -27,7 +26,6 @@ footer{
 .textContacts{
 font-size: 1vw;
 font-weight: 400;
-/* line-height: 30px; */
 letter-spacing: 0em;
 color:#FFFFFF;
 
@@ -46,23 +44,15 @@ color:#FFFFFF;
 .social-icon {
     height: 3.23vw;
     width:  3.23vw;
-    /* para a borda */
     border: 2px solid #ffffff;
-    /* para deixar um circulo */
     border-radius: 50%;
-
-   
     display: grid;
-    /* dizendo aoso filhos */
-
     place-items: center;
-     /* afeta o link e todos os filhos */
     color: #ffffff;
     font-size: 1.5rem;
- /* deixando a mudança de co lenta, retardando, levesa na troca de cor  */
     transition: all .5s;
 }
- /*  quando o mouse passa por cima ficará roxo */
+
 .social-icon:hover {
    
     background: #019cfe;
