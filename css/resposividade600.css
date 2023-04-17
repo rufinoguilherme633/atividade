@@ -26,20 +26,15 @@
 
 .titleChooseCourse {
     font-size: 7vw;
-    /* line-height: 11vw; */
-    background-color: aqua;
     width: 100%;
    
 /* width: 50vw; */
 }
 .imgDispositivos {
-    /* height: 20vh;
-    width: 40vw; */
     display: none;
     
 }
 .classRoom {
-    /* gap: 6vh; */
       margin-top: 4vh; 
 }
 .room {
@@ -72,14 +67,15 @@ li .social {
 /* main2 */
 .nameClassRoomescolhida {
 
-    font-size: 11vw;
-    line-height: 6.5vh;
+    font-size: 6vw;
+     line-height: 3.6vh; 
     height: max-content;
-    /* background-color: aqua; */
+     display: flex;
+     justify-content: center;
 }
 
 .textStatus {
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .colorSquareDivFinished {
@@ -92,14 +88,17 @@ li .social {
 } */
 
 .containerAluno {
-    width: 35vw;
-    height: 40vh;
+    width: 210px;
+    height: 500px;
     gap: 10px;
-  
  
 }
+.textSquare, .textFinished, .legend {
+   
+    font-size: 11px;
+}
 .nameAluno{
-    font-size: 5vw;
+    font-size: 4vw;
     width: 100%;
     line-height: 6vw;
     /* background-color: aqua; */

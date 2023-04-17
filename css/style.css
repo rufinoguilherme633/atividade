@@ -4,176 +4,8 @@
 	padding:0;
 	 box-sizing: border-box;
 	}
-/* 
-	.main2{
-		display: none;
-	} */
-
-header{
-	display:flex;
-	flex-direction:column;
-	display: flex;
-	
-
-	
-}
-
-.header{
-	background-color:#3347B0;
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	height: 10vh;
-	
-}
-
-.headerSecondary{
-	background-color:#BCC2E5;
-	 display:none; 
-	flex-direction:row;
-	align-items:center;
-	justify-content:space-between;
-	height: 5vh;
-
-}
-
-.textStatus{
-/* width: 47px;
-height: 19px; */
-font-style: normal;
-font-weight: 500;
-font-size: 1vw;
-/* line-height: 19px; */
-color: #3347B0;
-margin-left:9vw;
-width: max-content;
-cursor: pointer;
-
-}
-
-.optionRommSquareFinished{
-	display:flex;
-	flex-direction:row;
-	margin-right:9vw;
-	/* background-color: teal; */
-	/* width: max-content; */
-	align-items: center;
-
-}
-
-.nameClassRoomescolhida {	
-	padding: 3vh;
-}
-
-.legend{
-	/* width: 70px; */
-/* height: 19px; */
-font-style: normal;
-/* font-weight: 500; */
-font-size: 0.9vw;
-color: #3347B0;
-margin-right:3vw;
-/* background-color: #019cfe; */
-
-}
-
-#div-opcoes ul li:hover {
-	/* font-size: 40px; */
-	background-color:white;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	color:#3347B0;
-	transition:  1s ease;
-}
-
-/* .textsSquares{
-	display:flex;
-	gap:0.9vw;
-	padding: 1vw;
-} */
-
-.colorSquareDivFinished{
-	width: 1vw;
-height: 2.1vh;
 
 
-
-}
-
-
-.textSquare, .textFinished{
-/* width: 5vw;
-height: 19px; */
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 1vw;
-color: #3347B0;
-}
-.textsSquares {
-	display: flex;
-	flex-direction: row;
-	gap: 0.6vw;
-}
-
-.finished{
-	
-background: #3347B0;
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-}
-
-.square{
-
-background: #E5B657;
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-
-}
-
-.containerLogotext,.containerImgSigntext{
-
-	width:max-content;
-	display:flex;
-	flex-direction:row;
-	align-items:center;
-	color:#fff;
-	gap:1vw;
-	
-}
-.containerLogotext{
-	margin-left:10vw;
-}
-
-.containerImgSigntext{
-	margin-right:10vw;
-}
-
-
-.imgLogo{
-width: 3vw;
-height:8.5vh;
-}
-
-.LionSchool{
-
-font-size: 1.5vw;
-font-weight: 700;
-line-height: 1.5vw;
-
-}
-
-.imgLogoSign{
-width: 3vw;
-height: 4vh;
-
-}
-
-.Sign {
-	font-size: 1.5vw;
-font-weight: 500;
-/* line-height: 42px; */
-cursor: pointer;
-}
 
 main{
 	background-color:white;
@@ -223,8 +55,6 @@ height: 40vh;
 }
 
 
-
-
 .room{	
 box-sizing: border-box;
 width: 25vw;
@@ -251,81 +81,7 @@ color:#fff;
 	width: 6vw;
 }
 
-footer{
-	background-color:#3347B0;
 
-	justify-content: flex-end;
-}
-
-
-
-.footer{
-	display:flex;
-	flex-direction:row;
-	align-items:center;
-	justify-content:space-evenly;
-	height: 20vh;
-}
-
-.contacts{
-	display:flex;
-	flex-direction:column;
-	/* line-height:30px; */
-	display:flex;
-	gap:2vh;
-}
-
-
-
-.textContacts{
-font-size: 1vw;
-font-weight: 400;
-/* line-height: 30px; */
-letter-spacing: 0em;
-color:#FFFFFF;
-
-}
-
-.social{
-	display:flex;
-	flex-direction:row;
-	gap:2vw;
-}
-
-.fab ,.fab, .fa-brands{
-	height: 1vw;
-}
-
-.social-icon {
-    height: 3.23vw;
-    width:  3.23vw;
-    /* para a borda */
-    border: 2px solid #ffffff;
-    /* para deixar um circulo */
-    border-radius: 50%;
-
-   
-    display: grid;
-    /* dizendo aoso filhos */
-
-    place-items: center;
-     /* afeta o link e todos os filhos */
-    color: #ffffff;
-    font-size: 1.5rem;
- /* deixando a mudança de co lenta, retardando, levesa na troca de cor  */
-    transition: all .5s;
-}
- /*  quando o mouse passa por cima ficará roxo */
-.social-icon:hover {
-   
-    background: #019cfe;
-    border: 2px solid#019cfe;
-
-}
-.imgcontact {
-	height: 2.6vh;
-	width: 1.5vw;
-}
 
 /* .none {
 	display: none;
@@ -343,46 +99,10 @@ background: #3347B0;
 } */
 
 
-#div-opcoes {
 
-background: #3347B0;
-	border: 1px solid #ccc;
-	padding: 10px;
-
-  }
-  
-  #div-opcoes ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  #div-opcoes li {
-	margin-bottom: 5px;
-	cursor: pointer;
-	color: white;
-	
-  }
-
-  
-
-.textoption {
-width: 47px;
-height: 19px;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-color: #FFFFFF;
-}
 
 .main2{
 display: none;
-/* background-color: #019cfe; */
-
-	/* align-items:center;
-flex-direction:column; */
 
 height: 65vh;
 }
@@ -396,7 +116,8 @@ height: 65vh;
 	gap: 5vw;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 .containerAluno{
 	/* background-color:pink; */
@@ -669,7 +390,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .aluno__image {
     /* width: 400px;
     height: 400px; */
-    background-color: #3347B0;
+    /* background-color: #3347B0; */
     display: flex;
     width: 80%;
     height: 30vh;

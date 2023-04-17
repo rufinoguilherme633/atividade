@@ -41,5 +41,10 @@
     height: 50vh;
 
 }
+.graphic-container {
+    background-color: aqua;
+    flex-direction: row;
+    
 
+}
 }

@@ -43,14 +43,14 @@ const carregarAula = async () => {
 
     // adiciona evento de clique na div .room
     const rooms = document.querySelectorAll('.room');
-    rooms.forEach(room => {
-      room.addEventListener('click', () => {
-        const cursoSelecionado = room.querySelector('.nameClassRoom').textContent;
+    // rooms.forEach(room => {
+    //   room.addEventListener('click', () => {
+    //     // const cursoSelecionado = room.querySelector('.nameClassRoom').textContent;
      
-        console.log(alunos);
-        // adicionar código para exibir os alunos na tela
-      });
-    });
+    //     console.log(alunos);
+       
+    //   });
+    // });
 
     
   const main = document.getElementById('couses');
@@ -115,6 +115,7 @@ const carregarAula = async () => {
     }
   });
 }
+
 
 
 carregarAula();
