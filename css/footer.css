@@ -3,9 +3,6 @@ footer{
 
 	justify-content: flex-end;
 }
-
-
-
 .footer{
 	display:flex;
 	flex-direction:row;
@@ -13,24 +10,18 @@ footer{
 	justify-content:space-evenly;
 	height: 20vh;
 }
-
 .contacts{
 	display:flex;
 	flex-direction:column;
 	display:flex;
 	gap:2vh;
 }
-
-
-
 .textContacts{
 font-size: 1vw;
 font-weight: 400;
 letter-spacing: 0em;
 color:#FFFFFF;
-
 }
-
 .social{
 	display:flex;
 	flex-direction:row;
